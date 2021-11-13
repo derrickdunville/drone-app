@@ -7,7 +7,7 @@ steps:
     image: node:14-slim
     commands:
       - echo "hello world"
-      -
+
 volumes:
   - name: dockersock
     host:
