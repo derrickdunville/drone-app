@@ -3,10 +3,11 @@ name: default
 type: docker
 
 steps:
-  - name: hello-world
+  - name: jest
     image: node:14-slim
     commands:
-      - echo "hello world"
+      - npm i
+      - npm run test
 
 volumes:
   - name: dockersock
